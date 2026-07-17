@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
-            steps {
-                git branch: 'master', url: 'https://github.com/Pallavi2518/maven-app.git'
-            }
-        }
 
         stage('Build') {
             steps {
